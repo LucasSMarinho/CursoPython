@@ -43,16 +43,16 @@ while continuar == True:
                 n2 = float(n2)
                 operação = input("Porfavor escolha sua operação: ( +, -, *, /)")
                 if(operação == "+"): 
-                    print(f"Resposta: {n1 + n2}")
+                    print(f"Resposta: {(n1 + n2):.2f}")
                 
                 elif(operação == "-"): 
-                    print(f"Resposta: {n1 - n2}")
+                    print(f"Resposta: {(n1 - n2):.2f}")
                 
                 elif(operação == "*"): 
-                    print(f"Resposta: {n1 * n2}")
+                    print(f"Resposta: {(n1 * n2):.2f}")
                 
                 elif(operação == "/"): 
-                    print(f"Resposta: {n1 / n2}") 
+                    print(f"Resposta: {(n1 / n2):.2f}") 
                 else: 
                     print(f"Operação invalida 😵‍💫")
                     
@@ -100,6 +100,7 @@ while continuar == True:
                 if escolha == "1":
                     tempo = idade * 12
                     print(f"Sua idade em meses é: {tempo}")
+                    print("\n")
 
                 elif escolha == "2":
                     tempo = 0
@@ -110,6 +111,7 @@ while continuar == True:
                         else:
                             tempo+=366
                     print(f"Sua idade em dias é: {tempo}")
+                    print("\n")
 
                 elif escolha == "3":
                     tempo = 0
@@ -120,6 +122,7 @@ while continuar == True:
                         else:
                             tempo+=366
                     print(f"Sua idade em horas é: {tempo * 24}")
+                    print("\n")
 
                 elif escolha == "4":
                     tempo = 0
@@ -130,10 +133,12 @@ while continuar == True:
                         else:
                             tempo+=366
                     print(f"Sua idade em minutos é: {tempo * 24 * 60}")
+                    print("\n")
 
                 elif escolha == "4":
                     tempo = idade * 12 * 4
                     print(f"Sua idade em semanas é: {tempo}")
+                    print("\n")
 
                 else: 
                     print(f"opção invalida 😵‍💫")
@@ -212,7 +217,7 @@ while continuar == True:
 
         while sistemaEscolhido == "3":
             n1 = float(input("Escolha seu número: "))
-            print(f"o dobro do seu número é {n1 * 2}")
+            print(f"o dobro do seu número é {(n1 * 2):.2f}")
 
             resp = int(input(
                 "Deseja continuar usando o sistema?" \
@@ -237,7 +242,7 @@ while continuar == True:
 
             Imc = peso / pow(altura, 2)
 
-            print(f"seu IMC é {Imc}")
+            print(f"seu IMC é {Imc:.2f}")
 
             resp = int(input(
                 "Deseja continuar usando o sistema?" \
@@ -269,13 +274,13 @@ while continuar == True:
                 cm = float(input("Digite a medida em cm: " 
                 "\n"))
                 resultado = cm / 2.54
-                print(f"sua medida em polegadas é {resultado}")
+                print(f"sua medida em polegadas é {resultado:.2f}")
 
             else:
                 pl = float(input("Digite a medida em polegadas: " 
                 "\n"))
                 resultado = pl * 2.54
-                print(f"sua medida em centimetros é {resultado}")
+                print(f"sua medida em centimetros é {resultado:.2f}")
 
             print("\n")
             
@@ -302,7 +307,7 @@ while continuar == True:
         
         resultado = salario + (salario / 10)
 
-        print(f"seu novo salário é {resultado}")
+        print(f"seu novo salário é {resultado:.2f}")
 
         resp = int(input(
                 "Deseja continuar usando o sistema?" \
